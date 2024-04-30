@@ -1,0 +1,20 @@
+
+.captcha_space__MbZMI {
+    margin-top: 2%;
+    width: 20%;
+    height: 50px;
+}
+
+.captch {
+    margin-left: 10%;
+}
+
+.captcha {
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    width: 50%;
+    height: 40px;
+}

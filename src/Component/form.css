@@ -1,0 +1,463 @@
+
+.Form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .form {
+    width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .submit-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .submit-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  .container{
+    width:1000px;
+  padding-left: 100px;
+  }
+  .my-image {
+    padding: 10px; 
+   width:600px;
+   height: 130px;
+  }
+  .Region,
+.Country {
+  margin-bottom: 20px; /* Adjust margin as needed */
+}
+
+.Region select,
+.Country select {
+  width: 100%; /* Set width as needed */
+  padding: 10px; /* Adjust padding as needed */
+  font-size: 16px; /* Adjust font size as needed */
+  border: 1px solid #ccc; /* Add border */
+  border-radius: 5px; /* Add border radius */
+  background-color: #fff; /* Set background color */
+}
+
+/* Style for the dropdown arrow */
+.Region select,
+.Country select {
+  appearance: none; /* Remove default appearance */
+  -webkit-appearance: none; /* For older versions of Chrome and Safari */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px top 50%; /* Adjust position as needed */
+}
+
+.Region select:focus,
+.Country select:focus {
+  border-color: #007bff; /* Change border color on focus */
+  outline: none; /* Remove default focus outline */
+}
+
+/* Style for the dropdown arrow on hover */
+.Region select:hover,
+.Country select:hover {
+  cursor: pointer; /* Change cursor on hover */
+}
+  
+.Password {
+  margin-bottom: 20px; /* Adjust margin as needed */
+}
+
+.Password input[type="password"] {
+  width: 98%; /* Set width as needed */
+  padding: 10px; /* Adjust padding as needed */
+  font-size: 16px; /* Adjust font size as needed */
+  border: 1px solid #ccc; /* Add border */
+  border-radius: 5px; /* Add border radius */
+}
+
+.Password input[type="password"]:focus {
+  border-color: #007bff; /* Change border color on focus */
+  outline: none; /* Remove default focus outline */
+}
+
+  .Email {
+    margin-bottom: 20px; /* Adjust margin as needed */
+  }
+  
+  .Email input[type="email"] {
+    width: 98%; /* Set width as needed */
+    padding: 10px; /* Adjust padding as needed */
+    font-size: 16px; /* Adjust font size as needed */
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 5px; /* Add border radius */
+  }
+  
+  .Email input[type="email"]:focus {
+    border-color: #007bff; /* Change border color on focus */
+    outline: none; /* Remove default focus outline */
+  }
+  
+  
+  .First,
+.Middle,
+.Last {
+  margin-bottom: 20px; /* Adjust margin as needed */
+}
+
+.First input[type="text"],
+.Middle input[type="text"],
+.Last input[type="text"] {
+  width: 98%; /* Set width as needed */
+  padding: 10px; /* Adjust padding as needed */
+  font-size: 16px; /* Adjust font size as needed */
+  border: 1px solid #ccc; /* Add border */
+  border-radius: 5px; /* Add border radius */
+}
+
+.First input[type="text"]:focus,
+.Middle input[type="text"]:focus,
+.Last input[type="text"]:focus {
+  border-color: #007bff; /* Change border color on focus */
+  outline: none; /* Remove default focus outline */
+}
+
+  
+
+.Premises,
+.Distance {
+  margin-bottom: 20px; /* Adjust margin as needed */
+  display: flex; /* Display the radio buttons in a row */
+}
+
+.Premises label,
+.Distance label{
+  margin-right: 20px; /* Adjust margin between radio buttons */
+}
+
+.Premises input[type="radio"], 
+.Distance input[type="radio"] {
+  /* Hide the default radio button */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* Create custom radio button style */
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.Premises input[type="radio"]::before ,
+.Distance input[type="radio"]::before{
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #007bff; /* Change background color of checked radio button */
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0); /* Hide the inner circle by default */
+  transition: transform 0.2s ease-in-out; /* Add transition for animation */
+}
+
+/* Show the inner circle when the radio button is checked */
+.Premises input[type="radio"]:checked::before ,
+.Distance input[type="radio"]:checked::before{
+  transform: translate(-50%, -50%) scale(1);
+}
+
+
+.Contact,
+.Address,
+.Referral {
+  margin-bottom: 20px; /* Adjust margin as needed */
+}
+
+.Contact input[type="text"],
+.Address input[type="text"],
+.Referral input[type="text"] {
+  width: 98%; /* Set width as needed */
+  padding: 10px; /* Adjust padding as needed */
+  font-size: 16px; /* Adjust font size as needed */
+  border: 1px solid #ccc; /* Add border */
+  border-radius: 5px; /* Add border radius */
+  margin-bottom: 10px; /* Adjust margin between input fields */
+}
+
+.Address input[type="text"] {
+  width: calc(25% - 5px); /* Set width for each input field */
+}
+
+.Referral input[type="text"] {
+  width: 100%; /* Set width as needed */
+}
+
+.Contact input[type="text"]:focus,
+.Address input[type="text"]:focus,
+.Referral input[type="text"]:focus {
+  border-color: #007bff; /* Change border color on focus */
+  outline: none; /* Remove default focus outline */
+}
+
+.captcha {
+ /* Display captcha and input field in a row */
+  align-items: center; /* Align items vertically */
+}
+
+.captcha canvas {
+  box-shadow: #ccc;
+  margin-top: 20px;
+  margin-right: 10px; /* Adjust margin between captcha canvas and input field */
+}
+
+.captcha input[type="text"] {
+  width: 200px; /* Set width as needed */
+  padding: 10px; /* Adjust padding as needed */
+  font-size: 16px; /* Adjust font size as needed */
+  border: 1px solid #ccc; /* Add border */
+  border-radius: 5px; /* Add border radius */
+}
+
+.captcha input[type="text"]:focus {
+  border-color: #2c2c2d; /* Change border color on focus */
+  outline: none; /* Remove default focus outline */
+}
+
+
+
+.pay {
+  margin-bottom: 20px;
+  margin-top: 20px; /* Adjust margin as needed */
+}
+
+.pay button {
+  width: 400px;
+  padding: 10px 20px; /* Adjust padding as needed */
+  font-size: 16px; /* Adjust font size as needed */
+  background-color: #0793a0; /* Set background color */
+  color: #fff; /* Set text color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Add border radius */
+  cursor: pointer; /* Set cursor to pointer */
+}
+
+.pay button:hover {
+  background-color: #0056b3; /* Change background color on hover */
+}
+
+
+/* You can add your custom styles here */
+.subscription-form {
+  max-width: 400px; /* Adjust max-width as needed */
+  margin: 0 auto; /* Center the form horizontally */
+}
+
+.subscription-form input[type="submit"] {
+  width: 100%; /* Set width as needed */
+  padding: 10px; /* Adjust padding as needed */
+  font-size: 16px; /* Adjust font size as needed */
+  background-color: #007bff; /* Set background color */
+  color: #fff; /* Set text color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Add border radius */
+  cursor: pointer; /* Set cursor to pointer */
+}
+
+.subscription-form input[type="submit"]:hover {
+  background-color: #0056b3; /* Change background color on hover */
+}
+
+.subscription-form p {
+  text-align: center; /* Align text to center */
+  font-size: 18px; /* Adjust font size as needed */
+  color: green; /* Set text color */
+}
+
+.submitb {
+  text-align: center; /* Center the button */
+}
+
+.submitb input[type="submit"] {
+  width: 500px; 
+  height: 50px;/* Set width as needed */
+  padding: 10px; /* Adjust padding as needed */
+  font-size: 16px; /* Adjust font size as needed */
+  background-color: #007bff; /* Set background color */
+  color: #fff; /* Set text color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Add border radius */
+  cursor: pointer; /* Set cursor to pointer */
+}
+
+.submitb input[type="submit"]:hover {
+  background-color: #0056b3; /* Change background color on hover */
+}
+
+
+.para{
+  color: rgb(14, 123, 119);
+  margin-left:550px;
+  padding: 20px;
+}
+
+
+
+
+
+
+.payment-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.payment-option {
+  display: flex;
+  align-items: center;
+}
+
+.payment-option input[type='radio'] {
+  margin-right: 8px;
+}
+
+.payment-label {
+  cursor: pointer;
+}
+
+.payment-image {
+  width: 100px; /* Adjust as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+
+
+
+/* form.css */
+/* form.css */
+
+
+
+.submitb{
+  margin-top: 20px;
+  display: block;
+  width: calc(90% - 40px); /* Adjust width to accommodate padding */
+  margin: 0 auto 10px; /* Add margin bottom for spacing */
+  padding: 15px 20px; /* Adjust padding as needed */
+  font-size: 16px; /* Adjust font size as needed */
+  background-color: #0056b3; /* Set background color */
+  color: #fff; /* Set text color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Add border radius */
+  cursor: pointer; /* Set cursor to pointer */
+  text-align: center; 
+}
+.payment {
+  display: block;
+  width: calc(100% - 40px); /* Adjust width to accommodate padding */
+  margin: 0 auto 10px; /* Add margin bottom for spacing */
+  padding: 15px 20px; /* Adjust padding as needed */
+  font-size: 16px; /* Adjust font size as needed */ /* Set text color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Add border radius */
+  cursor: pointer; /* Set cursor to pointer */
+  text-align: center; /* Center align button text */
+}
+
+.submitb:hover{
+  background-color: #0056b3;
+}
+
+
+
+/* For screens smaller than 600px */
+@media screen and (max-width: 600px) {
+  .form {
+    width: 90%; /* Adjust width for smaller screens */
+  }
+
+  .my-image {
+    width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .container {
+    width: 90%; /* Adjust width for smaller screens */
+    padding-left: 0; /* Remove left padding */
+  }
+
+  .para {
+    margin-left: 0; /* Remove left margin */
+    text-align: center; /* Center align text */
+  }
+
+  /* Adjust other styles as needed for smaller screens */
+}
+
+/* For screens between 600px and 900px */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  .form {
+    width: 70%; /* Adjust width for medium screens */
+  }
+
+  .container {
+    width: 80%; /* Adjust width for medium screens */
+  }
+
+  /* Adjust other styles as needed for medium screens */
+}
+
+/* For screens larger than 900px */
+@media screen and (min-width: 901px) {
+  .form {
+    width: 50%;
+  }
+
+  .container {
+    width: 60%; 
+  }
+
+}
+
+
+.payment {
+  width: 60%; /* Adjust width as needed */
+}
+
+.paypal-button{
+  background-color: #ccc;
+}
+/* Additional styles can be added as per your requirement */

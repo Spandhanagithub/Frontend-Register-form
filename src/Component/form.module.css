@@ -1,0 +1,434 @@
+
+.Form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  .myImage{
+    width:400px
+  }
+  
+  .title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .form {
+    width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .submit-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .submit-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 600px;
+    margin-left: 200px;
+  }
+  
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  .container{
+    width:1000px;
+    padding-left: 100px;
+  }
+  
+  .my-image {
+    padding: 10px; 
+    width:600px;
+    height: 130px;
+  }
+  
+  .Region,
+  .Country {
+    margin-bottom: 20px; 
+  }
+  
+  .Region select,
+  .Country select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  
+  .Region select,
+  .Country select {
+    appearance: none; 
+    -webkit-appearance: none; 
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px top 50%;
+  }
+  
+  .Region select:focus,
+  .Country select:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .Region select:hover,
+  .Country select:hover {
+    cursor: pointer;
+  }
+  
+  .Password {
+    margin-bottom: 20px;
+  }
+  
+  .Password input[type="password"] {
+    width: 98%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .Password input[type="password"]:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .Email {
+    margin-bottom: 20px;
+  }
+  
+  .Email input[type="email"] {
+    width: 98%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .Email input[type="email"]:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .First,
+  .Middle,
+  .Last {
+    margin-bottom: 20px;
+  }
+  
+  .First input[type="text"],
+  .Middle input[type="text"],
+  .Last input[type="text"] {
+    width: 98%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .First input[type="text"]:focus,
+  .Middle input[type="text"]:focus,
+  .Last input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .Premises,
+  .Distance {
+    margin-bottom: 20px;
+    display: flex;
+  }
+  
+  .Premises label,
+  .Distance label{
+    margin-right: 20px; 
+  }
+  
+  .Premises input[type="radio"], 
+  .Distance input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .Premises input[type="radio"]::before ,
+  .Distance input[type="radio"]::before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #007bff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .Premises input[type="radio"]:checked::before ,
+  .Distance input[type="radio"]:checked::before{
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .Contact,
+  .Address,
+  .Referral {
+    margin-bottom: 20px;
+  }
+  
+  .Contact input[type="text"],
+  .Address input[type="text"],
+  .Referral input[type="text"] {
+    width: 98%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .Address input[type="text"] {
+    width: calc(25% - 5px);
+  }
+  
+  .Referral input[type="text"] {
+    width: 100%;
+  }
+  
+  .Contact input[type="text"]:focus,
+  .Address input[type="text"]:focus,
+  .Referral input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .captcha {
+    align-items: center;
+  }
+  
+  .captcha canvas {
+    box-shadow: #ccc;
+    margin-top: 20px;
+    margin-right: 10px;
+  }
+  
+  .captcha input[type="text"] {
+    width: 200px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .captcha input[type="text"]:focus {
+    border-color: #2c2c2d;
+    outline: none;
+  }
+  
+  .pay {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  
+  .pay button {
+    width: 400px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #0793a0;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .pay button:hover {
+    background-color: #0056b3;
+  }
+  
+  .subscription-form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .subscription-form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .subscription-form input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  .subscription-form p {
+    text-align: center;
+    font-size: 18px;
+    color: green;
+  }
+  
+  .submitb {
+    text-align: center;
+  }
+  
+  .submitb input[type="submit"] {
+    width: 500px;
+    height: 50px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .submitb input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  .para {
+    color: rgb(14, 123, 119);
+    margin-left:550px;
+    padding: 20px;
+  }
+  
+  .payment-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .payment-option {
+    display: flex;
+    align-items: center;
+  }
+  
+  .payment-option input[type='radio'] {
+    margin-right: 8px;
+  }
+  
+  .payment-label {
+    cursor: pointer;
+  }
+  
+  .payment-image {
+    width: 100px;
+    height: auto;
+  }
+  
+  .submitb {
+    margin-top: 20px;
+    display: block;
+    width: calc(90% - 40px);
+    margin: 0 auto 10px;
+    padding: 15px 20px;
+    font-size: 16px;
+    background-color: #0056b3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center; 
+  }
+  
+  .payment {
+    display: block;
+    width: calc(100% - 40px);
+    margin: 0 auto 10px;
+    padding: 15px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .submitb:hover {
+    background-color: #0056b3;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .form {
+        width: 90%;
+    }
+  
+    .my-image {
+        width: 100%;
+        height: auto;
+    }
+  
+    .container {
+        width: 90%;
+        padding-left: 0;
+    }
+  
+    .para {
+        margin-left: 0;
+        text-align: center;
+    }
+  }
+  
+  @media screen and (min-width: 601px) and (max-width: 900px) {
+    .form {
+        width: 70%;
+    }
+  
+    .container {
+        width: 80%;
+    }
+  }
+  
+  @media screen and (min-width: 901px) {
+    .form {
+        width: 50%;
+    }
+  
+    .container {
+        width: 60%;
+    }
+  }
+  
+  .payment {
+    width: 60%;
+  }
+  
+  .paypal-button {
+    background-color: #ccc;
+  }
+  
+  
+  
