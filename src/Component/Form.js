@@ -37,14 +37,14 @@ const Form = () => {
     let countriesData = [];
 
     switch (selectedRegion) {
-      case 'ASIA':
-        countriesData = ['India', 'China', 'Japan', 'South Korea',"Thailand","Singapore","Hong Kong",]; 
+      case 'ASIA PACIFIC':
+        countriesData = ['India', 'Australia','New Zealand' ,'UAE', "Thailand", "Singapore", "Hong Kong",]; 
         break;
       case 'EUROPE':
         countriesData = ["United Kingdom", "Germany", "France", "Italy", "Netherlands", "Ireland", "Switzerland", "Poland", "Belgium", "Portugal", "Spain", "Slovakia", "Greece", "Austria", "Hungary", "Czech Republic", "Serbia", "Denmark", "Sweden", "Norway", "Lithuania", "Romania"]; 
         break;
       case 'NORTH AMERICA':
-        countriesData = ['United States', 'Canada', 'Mexico']; 
+        countriesData = ['United States', 'Canada']; 
         break;
       default:
         countriesData = [];
@@ -70,7 +70,7 @@ const Form = () => {
         <div className='Region'>
         <select value={region} onChange={handleRegionChange} required>
           <option value="">Select Region</option>
-          <option value="ASIA">ASIA</option>
+          <option value="ASIA PACIFIC">ASIA PACIFIC</option>
           <option value="EUROPE">EUROPE</option>
           <option value="NORTH AMERICA">NORTH AMERICA</option>
         </select>
